@@ -3,11 +3,95 @@
     <head>
         <title>exe06</title>
         <style>
-          
+            *{
+            box-sizing:border-box;
+            }
+
+            .row::after{
+                    content: "";
+                    clear: left;
+                    display: table;
+            }
+
+            [class8=col-]{
+                float: left;
+                padding: 15px;
+                width: 100%;
+            }
+
+            @media only screen and (min-width: 481px){
+                .col-s-25 {width: 25%;}
+                .col-s-75 {width: 75%;}
+                .col-s-100 {width: 100%;}
+            }
+
+            @media only screen and (min-width: 769px){
+                .col-s-25 {width: 50%;}
+                .col-s-75 {width: 50%;}
+            }
+
+            html{
+                font-family: Helvetica, sans-serif;
+            }
+
+            header{
+                background-color: aqua;
+                color: blue;
+                padding: 15px;
+            }
+
+            .menu ul{
+                margin: 0;
+            }
+
+            .menu li{
+                background-color: deepskyblue;
+                color: white;
+                padding: 5px;
+                margin-bottom: 5px;
+            }
+
+            aside{
+                background-color: aquamarine;
+                color: burlywood;
+                padding: 15px;
+                text-align: center;
+                font-size: 15px;
+                box-shadow: gray 3px 3px 3px;
+            }
+
+            footer{
+                background-color: aliceblue;
+                color: cadetblue;
+                text-align: center;
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+
         </style>
     </head>
     <body>
-       <h1>Deep Sea</h1>
-       <font style="background-color:white">文字</font>
+        <header>
+            <h1>Deep Sea</h1>
+            <p>Deep Learing</p>
+        </header>
+
+       <div class="cul-25 cul-s-100">
+            <aside>
+                <h2>SSE</h2>
+                <p>Sillicon Education</p>
+                <h2>SEO Optimize</h2>
+                <p>SEO Optimizing</p>
+
+            </aside>
+       </div>
+       <footer>
+        <p>my </p>
+       </footer>
     </body>
 </html>
