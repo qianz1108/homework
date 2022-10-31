@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            
+        </title>
+       
+    </head>
+    <body>
+        <p>Please enter a nomber between0~100</p>
+        <script>
+            var puzzle = 32;
+            var numInput = window.prompt("Please input a number between 0~100","");
+            do {
+                if ( Number(numInput) > puzzle ) {
+                    window.alert("too big");
+                    numInput = window.prompt("Please input a number between 0~100","");
+                }
+                if ( Number(numInput) < 32 ) {
+                    window.alert("too small,num must between 0~100");
+                    numInput = window.prompt("Please input a number between 0~100","");
+                }
+                else {
+                    window.alert("too small");
+                    numInput = window.prompt("Please input a number between 0~100","");
+                }
+            }      
+            while ( Number(numInput) !== puzzle )
+            window.alert("right number");
+        </script>
+    </body>
+</html>
