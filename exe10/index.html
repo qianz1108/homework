@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>Fahrenheit to Celcius Temperature Converter</title>
+<body>
+
+<h2>华氏度换摄氏度</h2>
+<p>
+  <label>Fahrenheit华氏度：</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius摄氏度： <span id="outputCelcius"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+}
+</script>
+
+</body>
+</html>
