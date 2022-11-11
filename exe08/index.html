@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF=8">
+        <title>Javascript control structure</title>
+    </head>
+    <body>
+        <p>Javascript for Loop</p>
+        <p id="demo"></p>
+
+    <script>
+        let text = "";
+        var y = 0;
+
+        for (let i = 0; i < 5; i++) {
+            y += i;
+        text += "Loop = " + i  + ", 数字 = " + y + "<br>" ;
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+        <hr>
+
+        <p>Java script for loop using while</p>
+        <p id="second"></p>
+
+        <script>
+            var strText02 = "";
+            var x = 1;
+            var sum02 = 0;
+
+            while ( x < 5 ){
+                sum02 += x;
+                strText02 += "Loop =  "  + x + ", 数字 =" + sum02 + "<br>";
+                x++;
+            }
+            document.getElementById("second").innerHTML = strText02;
+
+        </script>
+        <hr>
+
+        <p>Java script for loop using do...while...</p>
+        <p id="third"></p>
+
+        <script>
+            var strText03 ="";
+            var y = 1;
+            var sum03 = 0;
+
+            do{
+                sum03 += y;
+                strText03 += "Loop =" + y + ", 数字 =" + sum03 + "<br>";
+                y++
+            }while( y <= 5)
+            document.getElementById("third").innerHTML = strText03;
+
+        </script>
+        <hr>
+
+        <p>Array</p>
+        <p id="msg01">Length of the Numlist = 5</p>
+        <p id="msg001"></p>
+        
+        <script>
+            var numList = [0, 4, 2, 8, 6];
+            var numSort = numList.sort();
+            var arrayLength = numList.length;
+            var numArray = "";
+            var i;
+            
+            for ( i=0; i < arrayLength; i++ ){
+                numArray += "numSort [" + i + "] = " + numSort[i] + "<br>";
+            }
+
+            document.getElementById("msg01").innerHTML = "Length of the Numlist = " + arrayLength;
+            document.getElementById("msg001").innerHTML = numArray;
+        </script>
+        <hr>
+
+
+        <p>Array02</p>
+        <p id="msg02">Length of the Numlist = 10</p>
+        <p id="msg002"></p>
+        
+        <script>
+            var numList02 = [1, 3, 7, 6, 3, 4, 9, 1, 2, 0];
+            var numSort02 = numList02.sort();
+            var arrayLength02 = numList02.length;
+            var numArray02 = "";
+            var z;
+            
+            for ( z=0; z < arrayLength02; z++ ){
+                numArray02 += "numSort [" + z + "] = " + numSort02[z] + "<br>";
+            }
+
+            document.getElementById("msg02").innerHTML = "Length of the Numlist = " + arrayLength02;
+            document.getElementById("msg002").innerHTML = numArray02;
+        </script>
+        <hr>
+    </body>
+</html>
